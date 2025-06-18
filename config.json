@@ -1,0 +1,8 @@
+{
+  "vault_path": "data/vault.enc",
+  "encryption_algorithm": "fernet",
+  "auto_clipboard_clear_seconds": 30,
+  "log_level": "info",
+  "default_username": "",
+  "clipboard_enabled": true
+}
