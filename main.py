@@ -12,7 +12,7 @@ class Main:
         self.tp = vt(bold=True, sleep=.03)
 
         # Menu options
-        self.options = ["View Passwords", "Add Password", "Settings", "Exit"]
+        self.options = ["Vault", "Settings", "Exit"]
 
         # Password Vault
         self.vault = Vault(self.tp)
@@ -27,16 +27,13 @@ class Main:
             self.tp.menuTypewriter(" | ", self.options)
             option = self.tp.inputTypewriter("Select an option").strip().title()
 
-            if option == '1' or option.startswith("View") or option == "View Passwords":
+            if option == '1' or option.startswith("Vau") or option == "Vault":
                 pass
 
-            elif option == '2' or option.startswith("Add") or option == "Add Password":
-                pass
-
-            elif option == '3' or option.startswith("Set") or option == "Settings":
+            elif option == '2' or option.startswith("Set") or option == "Settings":
                 pass
         
-            elif option == '4' or option.startswith("Ex") or option == "Exit":
+            elif option == '3' or option.startswith("Ex") or option == "Exit":
                 self.running = False
                 cc()
                 continue
